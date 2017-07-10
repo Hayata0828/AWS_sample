@@ -1,8 +1,8 @@
 application = 'reserve-hacker'
 worker_processes 2
 app_path = "/var/www/gitapp"
-shared_path = app_path + "/shared"
-current_path = app_path + "/current"
+shared_path = app_path
+current_path = app_path
 listen File.expand_path('tmp/sockets/unicorn.sock', shared_path)
 pid File.expand_path('tmp/pids/unicorn.pid', shared_path)
 timeout 1800
